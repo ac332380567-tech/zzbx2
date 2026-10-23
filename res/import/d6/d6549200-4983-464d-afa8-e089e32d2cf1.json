@@ -1,0 +1,1 @@
+{"__type__":"cc.Material","_name":"Disturbance","_effectAsset":{"__uuid__":"22a80d75-7a89-4ad2-b6ef-619a9b24b584"},"_defines":{"USE_TEXTURE":true},"_props":{"noiseTex":null,"noiseIntensity":1,"noiseSpeedX":1,"noiseSpeedY":1}}

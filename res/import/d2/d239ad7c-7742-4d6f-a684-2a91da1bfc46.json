@@ -1,0 +1,1 @@
+{"__type__":"cc.JsonAsset","_name":"light","json":{"sliders":{"cardLightAlpha":0.9,"cardLightDuration":80},"curve":{"keys":[{"time":0,"value":0},{"time":1,"value":1}]}}}

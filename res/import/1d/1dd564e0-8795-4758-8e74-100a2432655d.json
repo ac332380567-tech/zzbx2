@@ -1,0 +1,1 @@
+{"__type__":"cc.Material","_name":"Lambertian","_effectAsset":{"__uuid__":"0749c01d-5e69-4cd7-aa5d-3f53ab44c555"},"_defines":{"USE_TEXTURE":true},"_props":{"normalMap":null,"lightPos":{"__type__":"cc.Vec4","x":2,"z":3}}}

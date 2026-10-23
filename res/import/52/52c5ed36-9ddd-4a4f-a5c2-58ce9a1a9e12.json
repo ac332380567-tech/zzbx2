@@ -1,0 +1,1 @@
+{"__type__":"cc.Material","_name":"CardEdgeGlow","_effectAsset":{"__uuid__":"a1b2c3d4-e5f6-7890-abcd-ef1234567892"},"_defines":{"USE_TEXTURE":true},"_props":{"glowColor":[0.78,0.62,1,1],"glowParams":[0.7,0.12,0.02,0.12],"edgeShape":[0.155,0.845,1.15,1],"edgeProfile":[1.15,0.72,0,0],"pulseSpeed":2.2,"bandTexReady":1}}

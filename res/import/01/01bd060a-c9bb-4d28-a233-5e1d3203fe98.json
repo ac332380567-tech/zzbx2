@@ -1,0 +1,1 @@
+{"__type__":"cc.JsonAsset","_name":"longPressDetail","json":{"sliders":{"longPressDetailDelay":220,"longPressDetailDuration":180},"curve":{"keys":[{"time":0,"value":0,"outTangent":2.3688},{"time":1,"value":1,"inTangent":0.1091}]}}}

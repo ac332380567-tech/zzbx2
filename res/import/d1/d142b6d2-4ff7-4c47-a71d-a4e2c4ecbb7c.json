@@ -1,0 +1,1 @@
+{"__type__":"cc.JsonAsset","_name":"spacing","json":{"sliders":{"cardSpacingGap":32,"slideStickyMargin":5,"slideRegionMargin":140},"curve":{"keys":[{"time":0,"value":0,"outTangent":1.84},{"time":1,"value":1,"inTangent":0.1091}]}}}

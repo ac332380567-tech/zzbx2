@@ -1,0 +1,34 @@
+
+vfx3_9.png
+size: 172,138
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guangyun
+  rotate: false
+  xy: 2, 18
+  size: 79, 85
+  orig: 83, 89
+  offset: 2, 2
+  index: -1
+tuowei
+  rotate: true
+  xy: 2, 105
+  size: 31, 155
+  orig: 33, 157
+  offset: 1, 1
+  index: -1
+xingx_1
+  rotate: true
+  xy: 83, 26
+  size: 77, 87
+  orig: 81, 91
+  offset: 2, 2
+  index: -1
+xingx_2
+  rotate: false
+  xy: 2, 2
+  size: 9, 14
+  orig: 9, 14
+  offset: 0, 0
+  index: -1

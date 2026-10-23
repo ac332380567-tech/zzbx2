@@ -1,0 +1,1 @@
+{"__type__":"cc.Material","_name":"SelectBaseTint","_effectAsset":{"__uuid__":"99d4a5d2-07d5-4280-a2dd-28a438c81652"},"_defines":{"USE_TEXTURE":true},"_props":{"selectTargetColor":[1,0.933,0.698,1],"selectTint":[0,1.2,0.4,0.25]}}

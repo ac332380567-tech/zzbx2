@@ -1,0 +1,1 @@
+{"__type__":"cc.Material","_name":"Line","_effectAsset":{"__uuid__":"46f27e81-f35b-427a-934b-e0e922fe4712"},"_defines":{"USE_TEXTURE":true,"USE_ALPHA_TEST":false},"_props":{"texture":null,"color":{"__type__":"cc.Vec4","x":1,"y":1,"z":1,"w":1}}}

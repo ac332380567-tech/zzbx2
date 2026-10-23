@@ -1,0 +1,1 @@
+{"__type__":"cc.JsonAsset","_name":"serverlist_td_openew_jp","json":{"status":0,"message":"","version":"1","servers":[{"host":"rings.jp.openew.com","port":9300,"wssport":9301},{"host":"rings.jp.openew.com","port":9302,"wssport":9303}]}}

@@ -1,0 +1,1 @@
+{"__type__":"cc.JsonAsset","_name":"wxconfig","json":{"recharge_cb":"http://119.3.101.32:6669/recharge/lzd_pkgsdk","old_recharge_cb":"http://119.3.101.32:6669/recharge/lzd_pkgsdk","adUnitId":"adunit-3715a9528fd402ae","version":"1.0","miniGameExamine":false,"miniGameTd":false,"serverType":"product","isTest":true,"testVar1":0,"testVar2":0}}

@@ -1,0 +1,1 @@
+{"__type__":"cc.Material","_name":"CardAuraTint","_effectAsset":{"__uuid__":"f7e8d9c0-b1a2-4356-9876-543210fedcba"},"_defines":{"USE_TEXTURE":true},"_props":{"glowColor":[0.2,0.8,0.9,1],"glowAlpha":[0,0.5,0.1,0],"glowSpread":[0,0.15,0.85,0.1]}}

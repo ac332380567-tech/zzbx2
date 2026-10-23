@@ -1,0 +1,1 @@
+{"__type__":"cc.Material","_name":"GaussBlur","_effectAsset":{"__uuid__":"90abd268-2519-4e86-940b-8d3466f9e0a6"},"_defines":{"USE_TEXTURE":true},"_props":{"brightness":0.7,"blurAmount":0.3}}

@@ -1,0 +1,1 @@
+{"__type__":"cc.JsonAsset","_name":"serverlist_debug","json":{"status":0,"message":"","version":"1","servers":[{"host":"192.168.31.56","port":4000,"wssport":9301}]}}

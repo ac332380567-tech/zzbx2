@@ -1,0 +1,1 @@
+{"__type__":"cc.JsonAsset","_name":"pushMove","json":{"sliders":{"siblingPushFactor":0,"siblingPushDuration":120,"siblingNearDelay":0,"siblingFarDelay":24},"curve":{"keys":[{"time":0,"value":0,"outTangent":3.6},{"time":0.7,"value":1.15,"inTangent":-0.3333,"outTangent":-0.3},{"time":1,"value":1,"inTangent":-0.1333}]}}}

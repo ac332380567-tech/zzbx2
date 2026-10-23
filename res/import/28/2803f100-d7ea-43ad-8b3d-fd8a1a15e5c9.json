@@ -1,0 +1,1 @@
+{"__type__":"cc.Material","_name":"Phong","_effectAsset":{"__uuid__":"6d91e591-4ce0-465c-809f-610ec95019c6"},"_defines":{"USE_ALPHA_TEST":false},"_props":{"diffuseColor":{"__type__":"cc.Color","r":255,"g":255,"b":255,"a":122},"alphaThreshold":0.4}}
