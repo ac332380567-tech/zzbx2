@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>zzbx2 web</title>
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; background: #000; overflow: hidden; }
+    #GameDiv { position: relative; width: 100%; height: 100%; }
+    #GameCanvas { display: block; width: 100%; height: 100%; visibility: hidden; }
+    #splash {
+      position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+      background: #000; color: #ddd; display: flex; align-items: center; justify-content: center;
+      font: 14px/1.6 -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+    }
+    #splash .box { text-align: center; }
+    #splash .progress-bar { margin: 12px auto 0; width: 220px; height: 4px; background: #333; border-radius: 2px; overflow: hidden; }
+    #splash .progress-bar span { display: block; width: 0%; height: 100%; background: #4a9; transition: width .2s; }
+  </style>
+</head>
+<body>
+  <div id="GameDiv">
+    <canvas id="GameCanvas"></canvas>
+    <div id="splash"><div class="box"><div id="splashText">loading engine…</div><div class="progress-bar"><span></span></div></div></div>
+  </div>
+
+  <script src="src/settings.js"></script>
+  <script src="src/uuid-fix.js"></script>
+  <script src="src/cocos2d-js.js"></script>
+  <script src="src/api-compat.js"></script>
+  <script src="src/shim.js"></script>
+  <script src="src/scene-fix.js"></script>
+  <script src="src/fgui-atlas-fix.js"></script>
+  <script src="src/web-boot.js"></script>
+  <script>
+    if (location.search.indexOf('real=1') < 0) {
+      document.write('<script src="src/login-shim.js"><\/script>');
+    } else {
+      document.write('<script src="src/net-real.js"><\/script>');
+    }
+  </script>
+  <script src="src/canvas-fix.js"></script>
+  <script src="src/capture-login.js"></script>
+  <script src="main.js"></script>
+  <script src="src/project.js"></script>
+  <script>
+    window.__SETTINGS_REF__ = window._CCSettings;
+
+    function fail(err) {
+      var el = document.getElementById('splashText');
+      if (el) el.textContent = 'boot failed: ' + (err && err.stack ? err.stack : err);
+      console.error(err);
+    }
+
+    /* The 2.4 engine no longer consumes settings.jsList, so load game scripts here. */
+    function loadScripts(list, done) {
+      var i = 0;
+      (function next() {
+        if (i >= list.length) return done();
+        var s = document.createElement('script');
+        s.src = list[i++];
+        s.onload = next;
+        s.onerror = function () { console.warn('script failed: ' + s.src); next(); };
+        document.body.appendChild(s);
+      })();
+    }
+
+    window.addEventListener('error', function (e) { fail(e.error || e.message); });
+
+    /* the 2.2 engine loads settings.jsList itself */
+    try {
+      window.boot();
+    } catch (err) {
+      fail(err);
+    }
+  </script>
+</body>
+</html>

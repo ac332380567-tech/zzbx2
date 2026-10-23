@@ -1,0 +1,4 @@
+﻿res/
+src/assets
+node_modules/
+*.log
