@@ -89,6 +89,21 @@
     return true;
   }
 
+  function closeLoginUI() {
+    try { if (window.Entry && Entry.inst && Entry.inst.loadingDone) Entry.inst.loadingDone(); } catch (e) {}
+    try { if (window.Login && Login.LoginMgr && Login.LoginMgr.inst.onLoginDone) Login.LoginMgr.inst.onLoginDone(); } catch (e) {}
+    try {
+      var g = fgui.GRoot.inst;
+      for (var i = 0; i < g.numChildren; i++) {
+        var c = g.getChildAt(i);
+        if (c && c.name && String(c.name).toLowerCase().indexOf('login') === 0) {
+          c.visible = false;
+          log('hidden view', c.name);
+        }
+      }
+    } catch (e) { log('closeLoginUI error', e && e.message); }
+  }
+
   function enterGame() {
     try {
       var wl = Login.LoginMgr.inst.loginHandler._webLogin;
@@ -106,7 +121,7 @@
           })
           .then(function () { return loadServerReply(); })
           .then(function () { return wl._internalLogin(); })
-          .then(function () { log('[' + n + '] login done'); })
+          .then(function () { log('[' + n + '] login done'); closeLoginUI(); })
           .catch(function (e) {
             log('[' + n + '] failed: ' + (e && e.message));
             if (n < 3) {
